@@ -12,8 +12,8 @@ CREATE TABLE IF NOT EXISTS `word` (
 	PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS `markov_chain` {
+CREATE TABLE IF NOT EXISTS `markov_chain` (
 	`prev_word_id` int(11) NOT NULL,
 	`next_word_id` int(11) NOT NULL,
 	`occurrence_count` int(11) NOT NULL default '0'
-} ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
